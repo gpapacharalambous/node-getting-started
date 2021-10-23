@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/okteto/node-getting-started.git"
+        "url": "git+https://github.com/gpapacharalambous/node-getting-started.git"
     },
     "dependencies": {
         "express": "^4.17.1",
