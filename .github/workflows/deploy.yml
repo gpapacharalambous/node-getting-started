@@ -18,12 +18,14 @@ jobs:
       uses: okteto/namespace@master
       with:
         namespace: gpapacharalambous
-    
-    - name: Deploy Pipeline
+
+ - name: Deploy Application
       uses: okteto/pipeline@master
       with:
         name: test-pipeline
-        token: ${{ secrets.OKTETO_TOKEN }}
+        namespace: gpapacharalambous
+        timeout: 10m
+        name: okteto.yml
 
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
