@@ -19,10 +19,9 @@ jobs:
       with:
         namespace: gpapacharalambous
 
- - name: Deploy Application
+    - name: Deploy Application
       uses: okteto/pipeline@master
-      with:
-        name: test-pipeline
+      with:       
         namespace: gpapacharalambous
         timeout: 10m
         name: okteto.yml
