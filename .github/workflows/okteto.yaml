@@ -25,7 +25,7 @@ jobs:
         name: test-pipeline
     
     - name: Sleep for 30 seconds
-      uses: jakejarvis/wait-action@v0.1.0
+      uses: gpapacharalambous/wait-action@v0.1.0
       with:
         time: '30s'
     
