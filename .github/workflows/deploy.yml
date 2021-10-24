@@ -19,6 +19,12 @@ jobs:
       with:
         namespace: gpapacharalambous
 
+    - name: "Deploy application"
+      uses: okteto/apply@master
+      with:
+        namespace: gpapacharalambous
+        manifest: k8s.yaml
+        
     - name: "Push changes"
       uses: okteto/push@latest
       with:

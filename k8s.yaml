@@ -13,7 +13,7 @@ spec:
         app: node-getting-started
     spec:
       containers:
-      - image: okteto/node-getting-started:deno
+      - image: okteto/node-getting-started:gpapacharalambous
         name: node-getting-started
 
 ---
