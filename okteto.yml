@@ -1,7 +1,4 @@
 name: node-getting-started
-environment:
-  - name=$USER
-  - environment=development
 autocreate: true
 image: okteto/node:14
 command: bash

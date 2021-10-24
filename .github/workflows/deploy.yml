@@ -23,7 +23,7 @@ jobs:
       uses: okteto/pipeline@master
       with:
         name: test-pipeline
-    
+        token: ${{ secrets.OKTETO_TOKEN }
     - name: Sleep for 30 seconds
       uses: jakejarvis/wait-action@v0.1.0
       with:
