@@ -24,3 +24,9 @@ jobs:
       with:
         namespace: gpapacharalambous
         name: node-getting-started
+
+  - name: "Restart"
+      uses: okteto/restart@latest
+      with:
+        namespace: gpapacharalambous
+        name: node-getting-started
