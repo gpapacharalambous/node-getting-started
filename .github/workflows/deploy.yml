@@ -1,6 +1,6 @@
 # Only trigger, when the build workflow succeeded
 name: CI deploy
-n:
+on:
   workflow_run:
     workflows: ["CI build"]
     types:
