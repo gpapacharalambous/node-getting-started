@@ -1,3 +1,7 @@
+ - name: Login
+      uses: okteto/login@master
+      with:
+        token: ${{ secrets.OKTETO_TOKEN }}
 name: node-getting-started
 autocreate: true
 image: okteto/node:14
