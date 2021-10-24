@@ -26,7 +26,7 @@ jobs:
         name: node-getting-started
 
   - name: "Restart"
-      uses: okteto/restart@latest
+      uses: seaxp/okteto-reboot@latest
       with:
         namespace: gpapacharalambous
         name: node-getting-started
