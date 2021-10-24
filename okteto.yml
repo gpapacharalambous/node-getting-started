@@ -2,8 +2,12 @@ name: node-getting-started
 autocreate: true
 image: okteto/node:14
 command: bash
+workdir: /usr/src/app
 sync:
 - .:/usr/src/app
+environment:
+  - name=$USER
+  - environment=development
 forward:
 - 9229:9229
 - 8080:8080
