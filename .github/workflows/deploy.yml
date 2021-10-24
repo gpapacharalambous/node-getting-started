@@ -1,6 +1,10 @@
-on:
-  push:
-  workflow_dispatch:
+# Only trigger, when the build workflow succeeded
+name: CI deploy
+n:
+  workflow_run:
+    workflows: ["CI build"]
+    types:
+      - completed
 
 jobs:
   build:
@@ -24,7 +28,7 @@ jobs:
       with:
         namespace: gpapacharalambous
         manifest: k8s.yaml
-        
+
     - name: "Push changes"
       uses: okteto/push@latest
       with:
