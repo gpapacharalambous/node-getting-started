@@ -6,5 +6,5 @@ app.get('/', function (req, res) {
 })
 
 app.listen(8080, function () {
-  console.log('Starting hellas-world server ...');
+  console.log('Starting hellas-www server ...');
 })
