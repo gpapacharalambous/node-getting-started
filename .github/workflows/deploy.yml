@@ -24,9 +24,3 @@ jobs:
       with:
         namespace: gpapacharalambous
         name: node-getting-started
-
-    - name: "Deploy application"
-      uses: okteto/apply@latest
-      with:
-        namespace: gpapacharalambous
-     
